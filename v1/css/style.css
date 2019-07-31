@@ -1,0 +1,123 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  font-family: sans-serif;
+  justify-items: center;
+  background-image: url("/img/Siding.png");
+  grid-gap: 15px;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr 2fr 1.5fr;
+      grid-template-columns: 2fr 3fr 2fr 1.5fr;
+      grid-template-areas: "header-nav header-nav header-nav header-nav" "header-logo header-search header-contacts header-basket";
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+  min-height: 200px;
+  min-width: 1400px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #13eb4c;
+}
+
+.header-nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header-nav;
+}
+
+.header-nav__link {
+  margin-right: 20px;
+}
+
+.header-nav__link:last-child {
+  margin-right: 0px;
+}
+
+.header-logo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header-logo;
+}
+
+.header-search {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: header-search;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.header-contacts {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: header-contacts;
+  display: -ms-grid;
+  display: grid;
+}
+
+.header-contacts__link {
+  margin-top: 12px;
+}
+
+.header-contacts__link:first-child {
+  font-size: 30px;
+}
+
+.header-basket {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: header-basket;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1400px;
+  -ms-grid-rows: 3fr 10fr;
+      grid-template-rows: 3fr 10fr;
+      grid-template-areas: "main-nav" "main-section";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 15px;
+}
+
+.main-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main-nav;
+  background-color: lightskyblue;
+  min-height: 50px;
+  grid-auto-flow: column;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main-section;
+  background-color: #dc1be3;
+}
+/*# sourceMappingURL=style.css.map */

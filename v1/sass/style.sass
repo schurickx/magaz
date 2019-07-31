@@ -1,0 +1,84 @@
+*, *:before, *:after
+    box-sizing: border-box
+    text-decoration: none;
+    
+body    
+    display: grid
+    font-family: sans-serif  
+    justify-items: center 
+    background-image: url('/img/Siding.png')
+    grid-gap: 15px
+    
+.header
+    display: grid
+    grid-template-columns: 2fr 3fr 2fr 1.5fr
+    grid-template-areas: "header-nav header-nav header-nav header-nav" "header-logo header-search header-contacts header-basket"
+    grid-template-rows: 1fr 3fr
+    min-height: 200px
+    min-width: 1400px 
+    justify-items: center 
+    align-items: center  
+    background-color: #13eb4c;
+
+    
+    &-nav
+        grid-area: header-nav
+        &__link
+            margin-right: 20px
+            &:last-child
+                margin-right: 0px
+        
+    &-logo  
+        grid-area: header-logo
+        // max-width: 50px
+        // max-height: 100px
+        &__picture
+                // max-width: 180px
+                // max-height: 100px         
+       
+                     
+    &-search
+        grid-area: header-search
+        justify-self: center
+ 
+        &__input
+            
+        
+    &-contacts
+        grid-area: header-contacts
+        display: grid        
+        &__link
+            margin-top: 12px
+            &:first-child
+                font-size: 30px
+    &-basket
+        grid-area: header-basket
+
+.main
+    display: grid
+    max-width: 1400px
+    // background-color: red;
+    grid-template-rows: 3fr 10fr
+    grid-template-areas: "main-nav" "main-section"
+    grid-template-columns: 1fr 
+    justify-items: center    
+    align-items: center       
+    grid-gap: 15px
+    // background-color: lightskyblue
+
+    &-nav
+        display: grid
+        grid-area: main-nav
+        background-color: lightskyblue        
+        min-height: 50px 
+        grid-auto-flow: column
+        justify-self: stretch
+        justify-items: center 
+        align-items: center
+
+        &__link        
+        
+    &-section
+        grid-area: main-section
+        background-color: #dc1be3 
+             
